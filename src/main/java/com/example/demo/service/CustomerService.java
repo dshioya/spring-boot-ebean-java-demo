@@ -49,6 +49,7 @@ public class CustomerService {
         return customer;
     }
 
+    @Transactional
     public void delete(Long id) {
         Customer customer = getWithLock(id);
 
